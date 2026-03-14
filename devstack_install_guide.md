@@ -33,7 +33,7 @@ Get-VMProcessor -VMName "tenmayao" | fl ExposeVirtualizationExtensions
 
 Kết quả:
 
--   `True` → Đã bật thành công\
+-   `True` → Đã bật thành công
 -   `False` → Chưa bật
 
 ------------------------------------------------------------------------
@@ -48,10 +48,9 @@ Thực hiện các bước sau:
 4.  Chọn **Processors**
 5.  Trong mục **Virtualization Engine**, tick:
 
-```{=html}
-<!-- -->
 ```
     Virtualize Intel VT-x/EPT or AMD-V/RVI
+```
 
 Nếu không thấy tùy chọn này:
 
@@ -164,6 +163,10 @@ Thay:
     YOUR_SERVER_IP
 
 bằng **địa chỉ IP của máy ảo**.
+Kiểm tra ip:
+``` bash
+ip a
+```
 
 Ví dụ:
 
@@ -217,3 +220,4 @@ Sau khi cài xong, mở trình duyệt:
 -   Nếu cài bị treo ở `init_placement`:
     -   Kiểm tra RAM
     -   Kiểm tra IP cấu hình trong `local.conf`
+-   Tham khảo tại: https://docs.openstack.org/devstack/latest/

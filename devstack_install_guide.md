@@ -17,7 +17,7 @@ DevStack cần virtualization hoạt động trong máy ảo, vì vậy phải b
 
 ------------------------------------------------------------------------
 
-## 2.1 Trên Hyper-V
+#### 2.1 Trên Hyper-V
 
 Mở **PowerShell với quyền Administrator** và chạy lệnh:
 
@@ -38,7 +38,7 @@ Kết quả:
 
 ------------------------------------------------------------------------
 
-## 2.2 Trên VMware
+#### 2.2 Trên VMware
 
 Thực hiện các bước sau:
 
@@ -59,7 +59,7 @@ Nếu không thấy tùy chọn này:
 
 ------------------------------------------------------------------------
 
-## 2.3 Trên VirtualBox
+#### 2.3 Trên VirtualBox
 
 Các bước tương tự VMware:
 

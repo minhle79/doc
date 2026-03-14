@@ -17,7 +17,7 @@ DevStack cần virtualization hoạt động trong máy ảo, vì vậy phải b
 
 ------------------------------------------------------------------------
 
-#### 2.1 Trên Hyper-V
+### 2.1 Trên Hyper-V
 
 Mở **PowerShell với quyền Administrator** và chạy lệnh:
 
@@ -38,7 +38,7 @@ Kết quả:
 
 ------------------------------------------------------------------------
 
-#### 2.2 Trên VMware
+### 2.2 Trên VMware
 
 Thực hiện các bước sau:
 
@@ -59,7 +59,7 @@ Nếu không thấy tùy chọn này:
 
 ------------------------------------------------------------------------
 
-#### 2.3 Trên VirtualBox
+### 2.3 Trên VirtualBox
 
 Các bước tương tự VMware:
 
@@ -67,9 +67,9 @@ Các bước tương tự VMware:
 
 ------------------------------------------------------------------------
 
-# II. Cài Đặt DevStack
+## II. Cài Đặt DevStack
 
-## 1. Cập nhật hệ thống
+### 1. Cập nhật hệ thống
 
 ``` bash
 sudo apt update
@@ -79,7 +79,7 @@ sudo apt dist-upgrade -y
 
 ------------------------------------------------------------------------
 
-## 2. Cài đặt các gói cần thiết
+### 2. Cài đặt các gói cần thiết
 
 ``` bash
 sudo apt install -y git vim net-tools curl
@@ -87,7 +87,7 @@ sudo apt install -y git vim net-tools curl
 
 ------------------------------------------------------------------------
 
-## 3. Tắt Firewall (UFW)
+### 3. Tắt Firewall (UFW)
 
 ``` bash
 sudo systemctl stop ufw
@@ -96,7 +96,7 @@ sudo systemctl disable ufw
 
 ------------------------------------------------------------------------
 
-## 4. Tạo user chạy DevStack
+### 4. Tạo user chạy DevStack
 
 DevStack **không khuyến nghị chạy bằng root**, nên cần tạo user riêng.
 
@@ -118,7 +118,7 @@ sudo su - stack
 
 ------------------------------------------------------------------------
 
-## 5. Clone DevStack
+### 5. Clone DevStack
 
 ``` bash
 git clone https://opendev.org/openstack/devstack
@@ -139,7 +139,7 @@ git checkout stable/2024.2
 
 ------------------------------------------------------------------------
 
-## 6. Tạo file cấu hình
+### 6. Tạo file cấu hình
 
 ``` bash
 nano local.conf
@@ -174,7 +174,7 @@ Ví dụ:
 
 ------------------------------------------------------------------------
 
-## 7. Cài đặt DevStack
+### 7. Cài đặt DevStack
 
 Chạy script cài đặt:
 
@@ -186,7 +186,7 @@ Quá trình cài đặt có thể mất **20--40 phút** tùy cấu hình máy.
 
 ------------------------------------------------------------------------
 
-# III. Truy cập OpenStack Dashboard
+## III. Truy cập OpenStack Dashboard
 
 Sau khi cài xong, mở trình duyệt:
 
@@ -199,7 +199,7 @@ Sau khi cài xong, mở trình duyệt:
 
 ------------------------------------------------------------------------
 
-# IV. Cấu Hình Khuyến Nghị Cho Máy Ảo
+## IV. Cấu Hình Khuyến Nghị Cho Máy Ảo
 
   Tài nguyên   Khuyến nghị
   ------------ ---------------
@@ -210,7 +210,7 @@ Sau khi cài xong, mở trình duyệt:
 
 ------------------------------------------------------------------------
 
-# V. Lưu Ý
+## V. Lưu Ý
 
 -   Không chạy DevStack bằng **root**
 -   Nên dùng **Ubuntu 22.04 hoặc 20.04**
